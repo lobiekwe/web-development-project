@@ -1,0 +1,75 @@
+/* Set the background color of the page and general text styling */
+body {
+    background-color: #E4D6D6; /* Light background color to give a soft feel */
+    color: #000000; /* Set text color to black for readability */
+    font-weight: bold; /* All text on the page is bold by default */
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; /* Set the font for the entire page */
+}
+
+/* Wrapper to contain content and center it on the page */
+#wrapper {
+    width: 80%; /* Page content takes up 80% of the screen width */
+    margin: 0 auto; /* Centers the wrapper horizontally */
+}
+
+/* Style for main heading (h1) */
+h1 {
+    color: #2222db; /* Medium blue color for the heading text */
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; /* Use a sans-serif font for consistency */
+    text-shadow: 3px 3px 5px #CCCCCC; /* Adds a shadow for a slight 3D effect on the text */
+    text-align: center; /* Center the main heading on the page */
+}
+
+/* Style for subheadings (h2) */
+h2 {
+    color: #191970; /* Darker blue for subheading text */
+    font-family: "Times New Roman", serif; /* Uses a serif font for a classic, formal look */
+    font-style: italic; /* Italicize the text for differentiation */
+    text-align: center; /* Center subheadings as well */
+}
+
+/* Style for paragraphs */
+p {
+    font-size: .90em; /* Slightly smaller text size for paragraph content */
+    text-indent: 3em; /* Adds indentation to paragraphs for a structured layout */
+}
+
+/* Remove underline from navigation links */
+nav a {
+    text-decoration: none; /* Removes the default underline from links */
+    color: #000000; /* Keeps the navigation link color consistent with body text */
+}
+
+/* Style for navigation bar */
+nav {
+    font-weight: bold; /* Bold navigation text for emphasis */
+    font-size: 1.25em; /* Increases the size of the navigation text */
+    word-spacing: 1em; /* Adds spacing between navigation menu items */
+}
+
+/* Unordered list (ul) styling */
+ul {
+    font-weight: bold; /* Boldens list items for visibility */
+}
+
+/* List items (li) styling */
+li {
+    font-size: 1.25em; /* Larger font size for list items to make them stand out */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Centers footer text */
+    font-style: normal; /* Regular font style for the footer */
+    font-size: .75em; /* Smaller text size for the footer */
+}
+
+/* Style for secondary headings (h4) */
+h4 {
+    color: #191970; /* Dark blue color consistent with h2 for secondary headings */
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif; /* Serif font for a formal look */
+    text-align: center; /* Center the text of h4 elements */
+}
+
+
+  
