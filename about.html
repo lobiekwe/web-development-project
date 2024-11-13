@@ -1,42 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Main navigation menu, containing links to different homepages-->
-    <nav>
-        <h4><a href="index.html"> Home</a> | <a href="about.html"> About</a> |<a href="contact.html"> Contact</a>
-      </nav>	
-      <!-- wrapper for content -->
-     <div id="wrapper">
-        <!-- Photo and Bio Section-->
-        <section id="about">
-            <img src="https://studentweb.kennesaw.edu/~lobiekwe/3260/images/lotannapicture.jpg" alt="this is me" height="200" >
-        <div class="bio">
-            <!-- Main heading of the page -->
-            <h1>About Me</h1>
-            <p>Hi! My name is Lotanna Obiekwe, and I am currently pursuing a degree in Information Systems with a minor in Information Technology  at Kennesaw State University. Throughout my time here, Ive developed a deep interest in business analysis and UX/UI design, I have dedicated my academic career to understanding how technology can improve business operations and enhance user experiences. My journey through KSU has been a remarkable blend of academic challenges, real-world projects, and personal growth, shaping me into the professional I am today.</p>
-            <p>In addition to my studies, I am actively involved in various student organizations at KSU, including the Coles Ambassador for Student Success team and serving as a Student Leadership Assistant with the Student Leadership Department. These roles have allowed me to develop leadership skills, engage with my peers, and participate in initiatives that foster community and collaboration among students. Being part of these organizations has enriched my university experience, enabling me to network with professionals and gain insights into industry trends. Outside of academics, I have a passion for cooking, experimenting with various cuisines and flavors. A fun fact about me is my love for spicy foods and my enthusiasm for all things sour! Whether it's whipping up a spicy curry or enjoying a tangy lemon infused dessert, I find joy in the vibrant flavors that cooking brings to life.</p>
-            <p>My future goal is to continue growing my skills in business analysis and user experience design,the long-term aspiration of stepping into leadership roles within the tech industry. I’m excited to see where this journey takes me and how I can contribute to the evolving landscape of technology and business.
-        </section>
-     </div>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav class="header-link">
+          <!--Main navigation Menu, containing links to the different pages-->
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-     <!-- Link to external JavaScript file -->
-    <script src="index.js"></script>  
-</body>
+    <!-- Photo and Bio Section-->
+    <section id="about">
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/me.jpg" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Beyond academics and internships, I'm deeply engaged in student
+                organizations and community activities at KSU. From working with
+                the CASS team to coordinating events for the Department of
+                Student Leadership, I’ve learned the importance of balancing
+                technical skills with interpersonal capabilities. My role as a
+                facility manager, where I organized events for various
+                organizations and guests, further developed my problem-solving
+                and communication skills.
+              </p>
+              <br />
+              <p>
+                Looking forward, I aspire to make a meaningful impact in roles
+                such as a UX/UI designer, business analyst, or consultant within
+                technology and marketing. I am particularly interested in roles
+                that allow me to blend my technical knowledge with creativity,
+                innovation, and empathy for users' needs. My ultimate goal is to
+                grow into leadership roles, leveraging my foundation in
+                technology and communication to drive positive change in
+                businesses.
+              </p>
 
-   ***MORE CONTENT and design WILL BE ADDED ALONG THE PROGRESS***
-     
-</header>
-<!-- Footer section -->
-<footer>
-    <h4>Lotanna Obiekwe | Copyright &copy; 2024 </h4>
-    </footer>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Business Analysis</span><br /></li>
+                  <li><span>Leadership and Coordination</span><br /></li>
+                  <li><span>Web Development</span><br /></li>
+                  <li><span>Payment Provider Integration</span><br /></li>
+                  <li><span>Cloud Computing</span><br /></li>
+                  <li><span>Microsoft Office</span><br /></li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>2024</span><br />BBA in Information Systems & Minor in
+                    Information Technology from KSU
+                  </li>
+                </ul>
+              </div>
 
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>2023 - Present</span><br />CASS Student Mentor/Tutor
+                  </li>
+                  <li>
+                    <span>06/2024 - 08/2024</span><br />Business Analyst at Voya
+                    Financial
+                  </li>
+                  <li>
+                    <span>01/2022 - 06/2024</span><br />Teaching Assistant at
+                    KSU
+                  </li>
+                  <li>
+                    <span>05/2022 - 09/2022</span><br />Technical Consultant at
+                    Apple
+                  </li>
+                  <li>
+                    <span>05/2021 - 08/2021</span><br />Data Analyst Intern at
+                    SEO Tech.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------activities-------->
+    <div id="activities">
+      <div class="container">
+        <h1 class="sub-title">Fun Activites I Enjoy</h1>
+        <div class="activities-list">
+          <div class="activities">
+            <img src="images/food2.jpg" />
+            <h3>Delicious dishes I enjoy</h3>
+          </div>
+          <div class="activities">
+            <img src="images/hiking.jpg" />
+            <h3>Hiking with Friends</h3>
+          </div>
+          <div class="activities">
+            <img src="images/cass.jpg" />
+            <h3>Trip to Synovus bank</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="index.js"></script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+
+  <!-- Footer section -->
+  <div class="copyright">
+    <p>2024 Copyright &copy; Lotanna Obiekwe</p>
+  </div>
 </html>

@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-     <!--Main navigation Menu, containing links to the different pages-->
-     <nav>
-        <h4><a href="index.html"> Home</a> | <a href="about.html"> About</a> |<a href="contact.html"> Contact</a>
-      </nav>	
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Main navigation Menu, containing links to the different pages-->
+    <div id="header">
+      <div class="container">
+        <nav class="header-link">
+          <!--Main navigation Menu, containing links to the different pages-->
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <nav>
+        <h4><a href="/"> Home</a> | <a href="/about"> About</a> |<a href="/contact"> Contact</a>
+      </nav>	 -->
     <!-- This is the main header of the website-->
-    <header> 
-        <h1>Contact ME</h1>
-        <h2>Please fill out the contact form below </h2>
-
-   
-     <!-- Link to external JavaScript file -->
-    <script src="index.js"></script>  
-</body>
-#The Contact page should contain a simple contact form.
- The form should be designed to use Node.js for submission to your email address when a visitor
-completes it.
- Make sure that the navigation menu is available on the Contact page
-
-***MORE CONTENT and design  WILL BE ADDED ALONG THE PROGRESS***
-<!-- Footer section -->
-<footer>
-    <h4>Lotanna Obiekwe | Copyright &copy; 2024 </h4>
-    </footer>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+          </div>
+          <div class="contact-right">
+            <form action="/contact" method="POST">
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                id="message"
+                placeholder="Your Message here"
+              ></textarea>
+              <button class="submit-btn" type="submit">Submit Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>2024 Copyright &copy; Lotanna Obiekwe</p>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="index.js"></script>
+  </body>
 </html>
-

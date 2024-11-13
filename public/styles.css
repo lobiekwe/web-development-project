@@ -1,75 +1,275 @@
-/* Set the background color of the page and general text styling */
-body {
-    background-color: #E4D6D6; /* Light background color to give a soft feel */
-    color: #000000; /* Set text color to black for readability */
-    font-weight: bold; /* All text on the page is bold by default */
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; /* Set the font for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  color: #fff; /* Set text color to black for readability */
+  font-weight: bold; /* All text on the page is bold by default */
 }
 
-/* Wrapper to contain content and center it on the page */
-#wrapper {
-    width: 80%; /* Page content takes up 80% of the screen width */
-    margin: 0 auto; /* Centers the wrapper horizontally */
+body {
+  height: 100%;
+  background-color: #bdafb9; /* Light background color to give a soft feel */
 }
 
 /* Style for main heading (h1) */
-h1 {
-    color: #2222db; /* Medium blue color for the heading text */
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; /* Use a sans-serif font for consistency */
-    text-shadow: 3px 3px 5px #CCCCCC; /* Adds a shadow for a slight 3D effect on the text */
-    text-align: center; /* Center the main heading on the page */
+#header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
-
-/* Style for subheadings (h2) */
-h2 {
-    color: #191970; /* Darker blue for subheading text */
-    font-family: "Times New Roman", serif; /* Uses a serif font for a classic, formal look */
-    font-style: italic; /* Italicize the text for differentiation */
-    text-align: center; /* Center subheadings as well */
-}
-
-/* Style for paragraphs */
-p {
-    font-size: .90em; /* Slightly smaller text size for paragraph content */
-    text-indent: 3em; /* Adds indentation to paragraphs for a structured layout */
-}
-
-/* Remove underline from navigation links */
-nav a {
-    text-decoration: none; /* Removes the default underline from links */
-    color: #000000; /* Keeps the navigation link color consistent with body text */
+.container {
+  padding: 10px 10%;
 }
 
 /* Style for navigation bar */
 nav {
-    font-weight: bold; /* Bold navigation text for emphasis */
-    font-size: 1.25em; /* Increases the size of the navigation text */
-    word-spacing: 1em; /* Adds spacing between navigation menu items */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Unordered list (ul) styling */
-ul {
-    font-weight: bold; /* Boldens list items for visibility */
+.logo {
+  width: 140px;
 }
 
-/* List items (li) styling */
-li {
-    font-size: 1.25em; /* Larger font size for list items to make them stand out */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
-/* Footer styling */
-footer {
-    text-align: center; /* Centers footer text */
-    font-style: normal; /* Regular font style for the footer */
-    font-size: .75em; /* Smaller text size for the footer */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a::hover::after {
+  width: 100%;
+}
+.header-text {
+  margin-top: 0;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: #e24eb8;
+}
+
+/*----------about-----------*/
+#about {
+  padding: 30px 0;
+  color: #ababab;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #e24eb8;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+#activities {
+  padding: 30px 0;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(33.333% - 20px);
+  height: 300px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.activities img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.activities h3 {
+  margin-top: 10px;
+}
+
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* Style for subheadings (h2) */
+h2 {
+  color: #191970; /* Darker blue for subheading text */
+  font-family: "Times New Roman", serif; /* Uses a serif font for a classic, formal look */
+  font-style: italic; /* Italicize the text for differentiation */
+  text-align: center; /* Center subheadings as well */
+}
+
+/* Style for paragraphs */
+p {
+  font-size: 0.9em; /* Slightly smaller text size for paragraph content */
+}
+
+/* Remove underline from navigation links */
+nav a {
+  text-decoration: none; /* Removes the default underline from links */
+  color: #000000; /* Keeps the navigation link color consistent with body text */
+}
+
+/* Style for navigation bar */
+nav {
+  font-weight: bold; /* Bold navigation text for emphasis */
+  font-size: 1.25em; /* Increases the size of the navigation text */
+  word-spacing: 1em; /* Adds spacing between navigation menu items */
 }
 
 /* Style for secondary headings (h4) */
 h4 {
-    color: #191970; /* Dark blue color consistent with h2 for secondary headings */
-    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif; /* Serif font for a formal look */
-    text-align: center; /* Center the text of h4 elements */
+  color: #191970; /* Dark blue color consistent with h2 for secondary headings */
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times,
+    "Times New Roman", serif; /* Serif font for a formal look */
+  text-align: center; /* Center the text of h4 elements */
 }
 
+.header-link {
+  display: flex;
+  justify-content: right;
+}
 
-  
+.home-header-img img {
+  width: 200px;
+}
+
+.header-inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.submit-btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ababab;
+  border: 1px solid #ababab;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #ca85cf;
+  border: 1px solid #ca85cf;
+}
+
+.introduction {
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.introduction p {
+  margin-top: 20px;
+}
